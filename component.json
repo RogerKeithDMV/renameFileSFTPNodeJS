@@ -1,0 +1,21 @@
+{
+  "title": "renameFileSFTP",
+  "description": "rename a file inside a sftp server.",
+  "docsUrl": "",
+  "buildType": "docker",
+  "credentials": {
+    "fields": {}
+  },
+  "triggers": {
+    "sftpnodejs": {
+      "title": "Get sftp list of files or the content of a specific file",
+      "main": "./lib/triggers/processTrigger.js"
+    }
+  },
+  "actions": {
+    "getDataAction": {
+      "title": "Send information to another proccess",
+      "main": "./lib/actions/testAction.js"
+    }
+  }
+}
